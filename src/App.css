@@ -1,0 +1,836 @@
+.App {
+  text-align: center;
+}
+body{
+  background-color: rgba(243, 243, 252, 0.788);
+}
+
+/*ERROR PAGE*/
+.error-container{
+background-color: rgb(236, 236, 250);
+height: 100%;
+width: 100%;
+position:fixed;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.error-header{
+font-size: 5.5cm;
+margin-bottom: 0%;
+}
+.error-text{
+font-weight: 700;
+font-size: 1cm;
+}
+.link{
+  text-decoration: none;
+}
+.error-button{
+background-color: rgb(3, 105, 109);
+border: none;
+padding: 0.4cm;
+font-size: 0.5cm;
+height: 1.1cm;
+display: flex;
+align-items: center;
+margin-bottom: 2cm;
+color: white;
+border-radius: 5px;
+transition: 0.3s all linear;
+}
+.error-button:hover{
+  background-color: rgb(9, 202, 209);
+  color: black;
+}
+/*NAVBAR*/
+.navbar-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  height:3cm;
+}
+.navbar-image{
+  margin-right: 0.8cm;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.navspan{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.welcome{
+  font-weight: 400;
+  font-size: 0.55cm;
+  letter-spacing: 2px;
+}
+.logout{
+  font-weight: 400;
+  color: rgb(109, 106, 106);
+  margin-left: 0.7cm;
+  font-size: 0.65cm;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+/*LOGOUT*/
+.logout-container{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.logout-img{
+  width: 20cm;
+}
+.logout-header{
+  font-size: 2.2cm;
+}
+.logout-btn{
+  background-color: rgb(30, 155, 144);
+  border: none;
+  color: white;
+  font-size: 0.5cm;
+  padding: 0.3cm;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+.logout-btn:hover{
+  background-color: rgb(46, 209, 195);
+  color: black;
+}
+
+/*SEARCH*/
+.search-container{
+  background-color: white;
+  width: 73%;
+  margin-top: 1cm;
+  height: 1.5cm;
+  padding: 0.25cm;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+}
+.search-button{
+  background-color: rgb(35, 160, 149);
+  color: white;
+  border: none;
+  width: 3.2cm;
+  height: 1.2cm;
+  font-size: 0.7cm;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+.search-button:hover{
+  background-color: rgb(105, 194, 186);
+}
+.search-icon{
+  margin-right: auto;
+  display: block;
+  font-size: 0.5cm;
+}
+.search{
+width: 80%;
+border: none;
+margin-right: auto;
+color: rgb(109, 106, 106);
+font-size: 0.7cm;
+height: 1cm;
+margin-left: 0.5cm;
+}
+.search:focus{
+  outline: none !important;
+    border: 0.05cm solid rgb(218, 218, 252);
+}
+.search-request{
+  display: flex;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2cm;
+  margin-top: 1.7cm;
+}
+.search-total-container{
+  margin-top: 1cm;
+}
+.error{
+  color:red;
+  margin-bottom:0;
+  text-align: left;
+}
+.error-div{
+width:60%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 0%;
+}
+.requests{
+margin-left: auto;
+color: rgb(109, 106, 106);
+font-size: 1cm;
+margin-top: 1cm;
+margin-right: 0.7cm;
+padding: 0%;
+letter-spacing: 2px;
+font-weight: 500;
+}
+
+/*INFO*/
+.infos-container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+margin-top: 2cm;
+width: 85%;
+gap: 2rem;
+justify-content: space-between;
+margin-left: auto;
+margin-right: auto;
+}
+.info-container{
+display: flex;
+flex-direction: row;
+height:3cm;
+background-color: white;
+align-items: center;
+border-radius: 5px;
+}
+.name-value{
+display: flex;
+flex-direction: column;
+margin-left: 1cm;
+position: relative;
+}
+.info-value{
+margin-bottom: 0%;
+display: block;
+text-align: left;
+font-size: 1cm;
+}
+.info-name{
+margin-top: 0%;
+text-align: left;
+margin-left: auto;
+font-size: 0.6cm;
+color: rgb(97, 95, 95);
+text-align: left;
+
+}
+.info-icon{
+  margin-left: 1cm;
+  font-size: 1cm;
+  margin-right: 0.25cm;
+}
+.repo-icon{
+  color:red;
+  background-color: rgba(255, 0, 0, 0.192);
+  padding: 6px;
+  border-radius: 50%;
+}
+.followers-icon{
+color: rgb(2, 168, 168);
+background-color: rgba(2, 168, 168, 0.212);
+padding: 6px;
+  border-radius: 50%;
+}
+.followers-textt{
+  display: none;
+}
+.following-icon{
+  padding: 6px;
+  border-radius: 50%;
+  color: purple;
+  background-color: rgba(128, 0, 128, 0.158);
+}
+.gists-icon{
+  padding: 6px;
+  border-radius: 50%;
+  color: rgb(187, 187, 7);
+  background-color: rgba(255, 255, 0, 0.363);
+}
+/*USER*/
+.user-img{
+  width: 2.5cm;
+  height: 2.5cm;
+  border-radius: 50%;
+}
+.user-heading{
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5cm;
+  align-items: center;
+}
+.users-container{
+  background-color: white;
+  width: 47%;
+  padding-left: 0.5cm;
+  height: 9cm;
+  margin-right: 0.3cm;
+}
+.follow-btn{
+  background-color: transparent;
+  width: 3cm;
+  height: 1.2cm;
+  font-size: 0.6cm;
+  margin-left: auto;
+  margin-right: 0.5cm;
+  border-color: rgb(35, 160, 149);
+  border-top-left-radius:25px;
+  border-top-right-radius:25px;
+  border-bottom-right-radius:25px;
+  border-bottom-left-radius:25px;
+  color:  rgb(35, 160, 149);
+  cursor: pointer;
+}
+.follow-btn:hover{
+  color: white;
+  background-color:  rgb(35, 160, 149);;
+}
+.followers-container{
+background-color: white;
+width: 47%;
+height: 9cm;
+overflow-y: scroll;
+padding-left: 0.5cm;
+}
+.cards-container{
+width:85%;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+justify-content: space-between;
+flex-direction: row;
+margin-top: 2cm;
+}
+.user-name-login{
+margin-left: 0.5cm;
+text-align: left;
+}
+.user-name{
+margin-top: 0%;
+font-size: 0.65cm;
+font-weight: 500;
+margin-bottom: 0%;
+}
+.user-login{
+margin-top: 0%;
+color: rgb(68, 66, 66);
+font-size: 0.55cm;
+}
+.user-business{
+  text-align: left;
+  color: rgb(66, 65, 65);
+  margin-bottom: 0.2cm;
+  font-size: 0.55cm;
+}
+.user-location{
+  text-align: left;
+  margin-top: 0%;
+  margin-bottom: 0.2cm;
+  color: rgb(63, 62, 62);
+  font-size: 0.55cm;
+}
+.user-link{
+  color: rgb(35, 160, 149);
+  margin-top: 0%;
+  text-align: left;
+  font-size: 0.55cm;
+  cursor: pointer;
+}
+.user-bio{
+ text-align: left;
+ font-size: 0.6cm;
+}
+.user-text{
+  position: absolute;
+  margin-top: -1.1cm;
+  background-color: white;
+  padding: 9px;
+  width: 2cm;
+  font-size: 0.6cm;
+  color: rgb(63, 62, 62);
+}
+/*FOLLOWERS*/
+.followers-image{
+  width: 1.5cm;
+  height: 1.5cm;
+  border-radius: 50%;
+}
+.followers-sub-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5cm;
+}
+.followers-sub-container:hover{
+  background-color: rgb(157, 199, 248);
+  cursor: pointer;
+}
+.followers-login{
+margin-top: 0%;
+margin-bottom: 0%;
+text-align: left;
+margin-left: 0.5cm;
+font-size: 0.6cm;
+}
+.followers-url{
+  margin-left: 0.5cm;
+  font-size: 0.5cm;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: left;
+  color: rgb(63, 62, 62);
+}
+.followers-text{
+  position: absolute;
+  margin-top: -1.1cm;
+  background-color: white;
+  padding: 9px;
+  color: rgb(63, 62, 62);
+  margin-left: 51%;
+  font-size: 0.6cm;
+}
+/*CHARTS SECTION*/
+.pie-column-container{
+  display:flex;
+  flex-direction: row;
+  gap: 0.7cm;
+}
+.doughnut-bar-container{
+  display:flex;
+  flex-direction: row;
+  margin-top: 0.5cm;
+  margin-bottom: 1cm;
+  gap: 0.7cm;
+}
+.charts-container{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5cm;
+}
+.pie-container{
+width: 39%;
+overflow: hidden;
+margin-right: 0.5cm;
+}
+.column-container{
+width: 59%;
+overflow: hidden;
+}
+.doughnut-container{
+  width: 39%;
+  overflow: hidden;
+  margin-right:0.5cm;
+  margin-top: 0.5cm;
+}
+.bar-container{
+  width: 59%;
+  overflow: hidden;
+  margin-top: 0.5cm;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width:1600px){
+  .infos-container{
+    width: 95%;
+  }
+  .search-request{
+    width: 95%;
+  }
+  .cards-container{
+    width: 95%;
+  }
+  .error-div{
+    width:95%;
+  }
+  .charts-container{
+    width: 95%
+  }
+}
+@media screen and (max-width:1400px){
+.search-container{
+width: 68%;
+}
+
+}
+@media screen and (max-width:1200px){
+  .search-container{
+    width: 60%;
+    }
+    .cards-container{
+      display: flex;
+      flex-direction: column;
+      gap: 1cm;
+      margin-left: auto;
+      margin-right: auto;
+      width: 95%;
+    }
+    .followers-textt{
+      display: block;
+      margin-top: -1cm;
+      position: absolute;
+      margin-left: 0%;
+      padding: 9cm;
+      font-size: 0.6cm;
+      background-color: white;
+      left: 0;
+      padding: 0.2cm;
+    }
+    .followers-text{
+      display: none;
+    }
+    .users-container{
+      width: 95%;
+    }
+    .followers-container{
+      width: 95%;
+      margin-top: 1cm;
+    }
+    
+}
+@media screen and (max-width:1000px){
+    .search-container{
+      width: 60%;
+      height: 1cm;
+    }
+    .search{
+      font-size: 0.5cm;
+    }
+    .info-value{
+      font-size: 0.7cm;
+    }
+    .info-name{
+      font-size: 0.5cm;
+    }
+    .error-div{
+      width:80%;
+    }
+    .info-container{
+      width: 95%;
+      }
+      .search-request{
+        height: 1.5cm;
+      }
+      .search-icon{
+        font-size: 0.4cm;
+        font-weight: 400;
+      }
+      .requests{
+        font-size: 0.7cm;
+      }
+      .search-button{
+        width: 2.8cm;
+        height: 0.9cm;
+        font-size: 0.5cm;
+        border-radius: 10px;
+        letter-spacing: 1px;
+      }
+      .welcome{
+        font-size: 0.45cm;
+      }
+      .user-location, .user-link, .user-business{
+        font-size: 0.48cm;
+      }
+      .user-bio{
+        font-size: 0.5cm;
+      }
+      .user-name{
+        font-size: 0.5cm;
+      }
+      .user-login{
+        font-size: 0.5cm;
+      }
+      .follow-btn{
+        width: 2.7cm;
+        height: 1cm;
+        font-size: 0.5cm;
+      }
+      .followers-login{
+        font-size: 0.49cm;
+      }
+      .followers-url{
+        font-size: 0.48cm;
+      }
+      .logout-header{
+        font-size: 1.6cm;
+      }
+}
+@media screen and (max-width:900px){
+  .infos-container{
+    width: 90%;
+  }
+  .logout-img{
+    width: 90%;
+  }
+  .search-request{
+    width: 90%;
+    height: 3cm;
+    flex-direction: column;
+  }
+  .cards-container{
+    width: 90%;
+  }
+  .charts-container{
+    width: 90%;
+  }
+  .error-div{
+    width:90%;
+  }
+  .requests{
+    margin-top: 0.5cm;
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
+  }
+  .search-container{
+    width: 90%;
+  }
+}
+@media screen and (max-width:700px){
+  .infos-container{
+    width: 95%;
+  }
+  .error-text{
+    font-size: 0.7cm;
+  }
+  .search-request{
+    width: 95%;
+  }
+  .cards-container{
+    width: 95%;
+  }
+  .charts-container{
+    width: 95%;
+  }
+  .error-div{
+    width: 95%;
+  }
+}
+@media screen and (max-width:600px){
+  .info-container{
+    height: 1.8cm;
+  }
+  .search-request{
+    width: 95%;
+    margin-bottom: 0.5cm;
+    display: flex;
+    flex-direction: column;
+  }
+  .search-container{
+    margin-top: 0.5cm;
+    height: 25px;
+    width: 95%;
+    margin-left: 0%;
+  }
+  .search-button{
+    width: 2.2cm;
+    height: 24px
+  }
+  .search{
+  height: 20px;
+  
+  }
+  .search-total-container{
+    height: 25px;
+    margin-top: 1cm;
+    width: 100%;
+  }
+  .requests{
+  color: rgb(109, 106, 106);
+  font-size: 18px;
+  margin-top: 0.5cm;
+  padding: 0%;
+  font-weight: 600;
+  margin-right: auto;
+  text-align: left;
+  }
+  .cards-container{
+    width: 90%;
+  }
+  h3{
+    font-size: 15px
+  }
+  p{
+    font-size: 13px
+  }
+  h2{
+    font-size:18px;
+  }
+  .error-div{
+    width:95%;
+  }
+  .search-container{
+    width: 90%;
+  }
+  .navbar-image{
+    margin-left: 0.1cm;
+  }
+  .logout{
+    margin-right: 0.1cm;
+  }
+}
+@media screen and (max-width:650px){
+  .pie-column-container{
+    display: flex;
+    flex-direction: column
+  }
+  .charts-container{
+    width: 95%;
+  }
+  .doughnut-bar-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .pie-container,.bar-container, .doughnut-container{
+    width: 95%;
+    margin-bottom: 0.5cm;
+  }
+  .column-container{
+    width: 95%;
+  }
+  .infos-container{
+    width: 95%;
+  }
+  .info-container{
+    width: 95%
+  }
+  .requests{
+    margin-left: 0.2cm;
+  }
+  .search-request{
+    width: 95%;
+  }
+  .error-div{
+    width:95%;
+  }
+  .search-button{
+    margin-right: 0.3cm;
+  }
+}
+@media screen and (max-width:450px){
+.welcome{
+  font-size: 0.4cm;
+}
+.navbar-image{
+  margin-left: 0.5cm;
+}
+.logout{
+  font-size: 0.5cm;
+  margin-right: 0.5cm;
+}
+.search{
+  font-size: 0.36cm;
+}
+.search-button{
+  font-size: 0.34cm;
+  border-radius: 4px;
+}
+.search-icon{
+  font-size: 0.4cm;
+  font-weight: 400;
+}
+.requests{
+  margin-top: 0.2cm;
+}
+.infos-container{
+  margin-top: 2.5cm;
+  gap: 1rem;
+}
+.info-icon{
+  font-size: 0.7cm;
+}
+.info-value{
+  font-size: 0.45cm;
+}
+.info-name{
+  font-size: 0.4cm;
+}
+.user-img{
+  width: 1.8cm;
+  height: 1.8cm;
+}
+.follow-btn{
+  width: 1.9cm;
+  height: 0.8cm;
+  font-size: 0.4cm;
+}
+.user-name{
+  font-size: 0.42cm;
+}
+.user-login{
+  font-size: 0.39cm;
+}
+.user-bio{
+  font-size: 0.43cm;
+  font-weight: 400;
+}
+.user-business, .user-link, .user-location{
+  font-size: 0.4cm;
+}
+.users-container{
+  height: 7cm;
+}
+.user-text{
+  font-size: 0.45cm;
+  padding: 6px;
+  margin-top: -0.9cm;
+}
+.followers-textt{
+  font-size: 0.45cm;
+  padding: 6px;
+  margin-top: -0.9cm;
+}
+.followers-image{
+  width: 1.2cm;
+  height: 1.2cm;
+}
+.followers-login{
+  font-size: 0.45cm;
+}
+.followers-url{
+  font-size: 0.4cm;
+}
+.error-header{
+  font-size: 4.5cm;
+  font-weight: 700;
+}
+.error-text{
+  font-size: 0.53cm;
+}
+.error-button{
+  font-size: 0.4cm;
+}
+.logout-header{
+  font-size: 1.2cm;
+}
+.logout-btn{
+  font-size: 0.4cm;
+  padding: 0.2cm;
+}
+
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  border-top-color: hsl(205, 78%, 60%);
+  animation: spinner 0.6s linear infinite;
+}
