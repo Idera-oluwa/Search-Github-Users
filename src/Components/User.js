@@ -12,7 +12,7 @@ const User =()=>{
          <img className='user-img' src={userImg}/>
          <div className='user-name-login'>
              <h3 className='user-name'>{name}</h3>
-             <p className='user-login'>@{userLogin}</p>
+        <p className='user-login'>@{userLogin}</p>
          </div>
          <button className='follow-btn'>Follow</button>
      </div>
@@ -21,7 +21,7 @@ const User =()=>{
       <p className='user-bio'>{bio}</p>
        <p className='user-business'><MdBusiness/> {company}</p>
        <p className='user-location'><MdLocationOn/> {location}</p>
-       <p className='user-link'><MdLink/> {blog}</p>
+        <p className='user-link'><a href={`https://${blog}`}><MdLink/>{blog}</a></p>
       </div>
       </div>
       <p className='followers-text'>Followers</p>

@@ -493,10 +493,10 @@ width: 68%;
       display: none;
     }
     .users-container{
-      width: 95%;
+      width: 100%;
     }
     .followers-container{
-      width: 95%;
+      width: 100%;
       margin-top: 1cm;
     }
     
@@ -658,7 +658,7 @@ width: 68%;
   text-align: left;
   }
   .cards-container{
-    width: 90%;
+    width: 95%;
   }
   h3{
     font-size: 15px
@@ -782,6 +782,11 @@ width: 68%;
 }
 .users-container{
   height: 7cm;
+  padding-left:0;
+}
+.followers-container{
+  height: 7cm;
+  padding-left:0;
 }
 .user-text{
   font-size: 0.45cm;
