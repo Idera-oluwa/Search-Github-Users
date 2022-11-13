@@ -827,6 +827,9 @@ width: 68%;
 }
 
 }
+a{
+  text-decoration: none;
+}
 @keyframes spinner {
   to {
     transform: rotate(360deg);
