@@ -402,6 +402,8 @@ font-size: 0.6cm;
   display:flex;
   flex-direction: row;
   gap: 0.7cm;
+  margin-left: auto;
+margin-right: auto;
 }
 .doughnut-bar-container{
   display:flex;
@@ -409,12 +411,14 @@ font-size: 0.6cm;
   margin-top: 0.5cm;
   margin-bottom: 1cm;
   gap: 0.7cm;
+  margin-left: auto;
+margin-right: auto;
 }
 .charts-container{
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.5cm;
+  margin-top: 1cm;
 }
 .pie-container{
 width: 39%;
@@ -691,17 +695,17 @@ width: 68%;
     flex-direction: column;
   }
   .pie-container,.bar-container, .doughnut-container{
-    width: 95%;
+    width: 100%;
     margin-bottom: 0.5cm;
   }
   .column-container{
-    width: 95%;
+    width: 100%;
   }
   .infos-container{
     width: 95%;
   }
   .info-container{
-    width: 95%
+    width: 100%
   }
   .requests{
     margin-left: 0.2cm;
