@@ -52,12 +52,12 @@ transition: 0.3s all linear;
   background-color: white;
   justify-content: center;
   align-items: center;
-  height:3cm;
+  height:2.3cm;
 }
 .navbar-image{
   margin-right: 0.8cm;
-  width: 42px;
-  height: 42px;
+  width: 37px;
+  height: 37px;
   border-radius: 50%;
 }
 .navspan{
@@ -66,14 +66,14 @@ transition: 0.3s all linear;
 }
 .welcome{
   font-weight: 400;
-  font-size: 0.55cm;
-  letter-spacing: 2px;
+  font-size: 0.44cm;
+  letter-spacing: 1px;
 }
 .logout{
   font-weight: 400;
   color: rgb(109, 106, 106);
   margin-left: 0.7cm;
-  font-size: 0.65cm;
+  font-size: 0.52cm;
   cursor: pointer;
   letter-spacing: 1px;
 }
@@ -88,17 +88,18 @@ transition: 0.3s all linear;
   height: 100%;
 }
 .logout-img{
-  width: 20cm;
+  width: 16cm;
 }
 .logout-header{
-  font-size: 2.2cm;
+  font-size: 1.5cm;
+  margin-bottom: 0.5cm;
 }
 .logout-btn{
   background-color: rgb(30, 155, 144);
   border: none;
   color: white;
-  font-size: 0.5cm;
-  padding: 0.3cm;
+  font-size: 0.4cm;
+  padding: 0.2cm;
   border-radius: 5px;
   letter-spacing: 2px;
 }
@@ -110,22 +111,23 @@ transition: 0.3s all linear;
 /*SEARCH*/
 .search-container{
   background-color: white;
-  width: 73%;
+  width: 70%;
   margin-top: 1cm;
-  height: 1.5cm;
+  height: 1cm;
   padding: 0.25cm;
   align-items: center;
   display: flex;
   flex-direction: row;
   margin-right: auto;
+  border-radius: 10px;
 }
 .search-button{
   background-color: rgb(35, 160, 149);
   color: white;
   border: none;
-  width: 3.2cm;
-  height: 1.2cm;
-  font-size: 0.7cm;
+  width: 2.6cm;
+  height: 1cm;
+  font-size: 0.5cm;
   border-radius: 10px;
   letter-spacing: 1px;
 }
@@ -135,15 +137,15 @@ transition: 0.3s all linear;
 .search-icon{
   margin-right: auto;
   display: block;
-  font-size: 0.5cm;
+  font-size: 0.4cm;
 }
 .search{
 width: 80%;
 border: none;
 margin-right: auto;
 color: rgb(109, 106, 106);
-font-size: 0.7cm;
-height: 1cm;
+font-size: 0.55cm;
+height: 0.8cm;
 margin-left: 0.5cm;
 }
 .search:focus{
@@ -152,11 +154,12 @@ margin-left: 0.5cm;
 }
 .search-request{
   display: flex;
-  width: 85%;
+  width: 90vw;
+    max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  height: 2cm;
-  margin-top: 1.7cm;
+  height: 1.6cm;
+  margin-top: 1.2cm;
 }
 .search-total-container{
   margin-top: 1cm;
@@ -175,7 +178,7 @@ margin-bottom: 0%;
 .requests{
 margin-left: auto;
 color: rgb(109, 106, 106);
-font-size: 1cm;
+font-size: 0.83cm;
 margin-top: 1cm;
 margin-right: 0.7cm;
 padding: 0%;
@@ -186,9 +189,10 @@ font-weight: 500;
 /*INFO*/
 .infos-container{
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
 margin-top: 2cm;
-width: 85%;
+width: 90vw;
+max-width: 1170px;
 gap: 2rem;
 justify-content: space-between;
 margin-left: auto;
@@ -197,7 +201,7 @@ margin-right: auto;
 .info-container{
 display: flex;
 flex-direction: row;
-height:3cm;
+height:2.5cm;
 background-color: white;
 align-items: center;
 border-radius: 5px;
@@ -212,20 +216,20 @@ position: relative;
 margin-bottom: 0%;
 display: block;
 text-align: left;
-font-size: 1cm;
+font-size: 0.8cm;
 }
 .info-name{
 margin-top: 0%;
 text-align: left;
 margin-left: auto;
-font-size: 0.6cm;
+font-size: 0.5cm;
 color: rgb(97, 95, 95);
 text-align: left;
 
 }
 .info-icon{
   margin-left: 1cm;
-  font-size: 1cm;
+  font-size: 0.8cm;
   margin-right: 0.25cm;
 }
 .repo-icon{
@@ -257,8 +261,8 @@ padding: 6px;
 }
 /*USER*/
 .user-img{
-  width: 2.5cm;
-  height: 2.5cm;
+  width: 2.2cm;
+  height: 2.2cm;
   border-radius: 50%;
 }
 .user-heading{
@@ -271,14 +275,14 @@ padding: 6px;
   background-color: white;
   width: 47%;
   padding-left: 0.5cm;
-  height: 9cm;
+  height: 8cm;
   margin-right: 0.3cm;
 }
 .follow-btn{
   background-color: transparent;
-  width: 3cm;
-  height: 1.2cm;
-  font-size: 0.6cm;
+  width: 2.3cm;
+  height: 0.9cm;
+  font-size: 0.4cm;
   margin-left: auto;
   margin-right: 0.5cm;
   border-color: rgb(35, 160, 149);
@@ -296,12 +300,13 @@ padding: 6px;
 .followers-container{
 background-color: white;
 width: 47%;
-height: 9cm;
+height: 8cm;
 overflow-y: scroll;
 padding-left: 0.5cm;
 }
 .cards-container{
-width:85%;
+  width: 90vw;
+  max-width: 1170px;
 display: flex;
 margin-left: auto;
 margin-right: auto;
@@ -316,38 +321,38 @@ text-align: left;
 }
 .user-name{
 margin-top: 0%;
-font-size: 0.65cm;
+font-size: 0.52cm;
 font-weight: 500;
 margin-bottom: 0%;
 }
 .user-login{
 margin-top: 0%;
 color: rgb(68, 66, 66);
-font-size: 0.55cm;
+font-size: 0.42cm;
 }
 .user-business{
   text-align: left;
   color: rgb(66, 65, 65);
   margin-bottom: 0.2cm;
-  font-size: 0.55cm;
+  font-size: 0.45cm;
 }
 .user-location{
   text-align: left;
   margin-top: 0%;
   margin-bottom: 0.2cm;
   color: rgb(63, 62, 62);
-  font-size: 0.55cm;
+  font-size: 0.45cm;
 }
 .user-link{
   color: rgb(35, 160, 149);
   margin-top: 0%;
   text-align: left;
-  font-size: 0.55cm;
+  font-size: 0.45cm;
   cursor: pointer;
 }
 .user-bio{
  text-align: left;
- font-size: 0.6cm;
+ font-size: 0.47cm;
 }
 .user-text{
   position: absolute;
@@ -355,13 +360,13 @@ font-size: 0.55cm;
   background-color: white;
   padding: 9px;
   width: 2cm;
-  font-size: 0.6cm;
+  font-size: 0.5cm;
   color: rgb(63, 62, 62);
 }
 /*FOLLOWERS*/
 .followers-image{
-  width: 1.5cm;
-  height: 1.5cm;
+  width: 1.2cm;
+  height: 1.2cm;
   border-radius: 50%;
 }
 .followers-sub-container{
@@ -378,11 +383,11 @@ margin-top: 0%;
 margin-bottom: 0%;
 text-align: left;
 margin-left: 0.5cm;
-font-size: 0.6cm;
+font-size: 0.45cm;
 }
 .followers-url{
   margin-left: 0.5cm;
-  font-size: 0.5cm;
+  font-size: 0.4cm;
   margin-top: 0%;
   margin-bottom: 0%;
   text-align: left;
@@ -395,7 +400,7 @@ font-size: 0.6cm;
   padding: 9px;
   color: rgb(63, 62, 62);
   margin-left: 51%;
-  font-size: 0.6cm;
+  font-size: 0.5cm;
 }
 /*CHARTS SECTION*/
 .pie-column-container{
@@ -415,7 +420,8 @@ margin-right: auto;
 margin-right: auto;
 }
 .charts-container{
-  width: 85%;
+  width: 90vw;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1cm;
@@ -460,15 +466,10 @@ overflow: hidden;
     width: 95%
   }
 }
-@media screen and (max-width:1400px){
-.search-container{
-width: 68%;
-}
 
-}
 @media screen and (max-width:1200px){
   .search-container{
-    width: 60%;
+    width: 65%;
     }
     .cards-container{
       display: flex;
@@ -503,7 +504,7 @@ width: 68%;
 }
 @media screen and (max-width:1000px){
     .search-container{
-      width: 60%;
+      width: 65%;
       height: 1cm;
     }
     .search{
@@ -541,28 +542,13 @@ width: 68%;
       .welcome{
         font-size: 0.45cm;
       }
-      .user-location, .user-link, .user-business{
-        font-size: 0.48cm;
-      }
-      .user-bio{
-        font-size: 0.5cm;
-      }
       .user-name{
-        font-size: 0.5cm;
-      }
-      .user-login{
         font-size: 0.5cm;
       }
       .follow-btn{
         width: 2.7cm;
         height: 1cm;
         font-size: 0.5cm;
-      }
-      .followers-login{
-        font-size: 0.49cm;
-      }
-      .followers-url{
-        font-size: 0.48cm;
       }
       .logout-header{
         font-size: 1.6cm;
